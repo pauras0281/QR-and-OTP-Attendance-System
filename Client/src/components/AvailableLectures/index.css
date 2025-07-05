@@ -1,0 +1,31 @@
+/* Styles for the StudentLectures component */
+.student-lectures-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .lecture-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .lecture-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .lecture-item p {
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #666;
+  }
+  

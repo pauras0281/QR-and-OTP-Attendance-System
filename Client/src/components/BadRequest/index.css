@@ -1,0 +1,12 @@
+.bad-request{
+    height: 100vh;
+    background-color: rgba(255, 3, 3, 0.756);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bad-request .bad-header h1{
+    font-size: 20vh;
+    color: black;
+    text-shadow: 6px 2px 6px rgba(10, 2, 2, 0.79);
+}

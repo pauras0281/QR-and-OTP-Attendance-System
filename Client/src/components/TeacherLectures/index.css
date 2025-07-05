@@ -1,0 +1,62 @@
+ .cont{
+  background-color: #f5f5f5;
+  padding: 2rem;
+  font-weight: normal;
+ }
+.container {
+    max-width: 960px;
+    margin: 0;
+    padding: 20px;
+  }
+  .cont th{
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Use a slightly larger font size for headings */
+  font-weight: bold; /* Make headings bolder */
+  margin-bottom: 1rem; /* Add some space below the heading */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+      margin-top: 10px;
+    }
+  
+    th, td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    th {
+      text-align: center;
+    }
+  
+    td {
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+   

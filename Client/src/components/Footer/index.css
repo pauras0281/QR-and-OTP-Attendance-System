@@ -1,0 +1,23 @@
+.footer{
+    font-size: 2rem;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    width: 100vw;
+    background-color: #0B5ED7;
+    justify-content: space-between;
+    z-index: 199;
+}
+.footeritems{
+    margin: 0;
+    text-decoration: none;
+    color: wheat;
+    margin: 0 10px;
+}
+
+@media (max-width: 600px){
+    .footer{
+        flex-direction: column;
+        position: relative;
+    }
+}

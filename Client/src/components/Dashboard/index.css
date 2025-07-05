@@ -1,0 +1,172 @@
+.dashContainer{
+    height: 90vh;
+    position: relative;
+    width: 80%;
+    font-size: 3rem;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-evenly;
+    align-content: space-around;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    /* gap: 100px; */
+}
+.dashContainer h4{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    z-index: 9;
+    position: relative;
+}
+.menu-card{
+    /* width: 350px; */
+    height: 150px;
+    border: 0.3px solid rgb(131, 127, 127, 0.5);
+    position: relative;
+    border-radius:5px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    /* margin: 0 100px ; */
+}
+.menu-card::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0B5ED7;
+    bottom: -100%;
+    left: 0;
+    transition: all ease 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+}
+.menu-card h1{
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 4rem;
+    top: 17%;
+    position: relative;
+    z-index: 99;
+}
+.menu-card i{
+    font-size: 70px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+.menu-card:hover::after{
+    bottom: 0;
+}
+.menu-card:hover{
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: none;
+    flex-direction: column;
+    top: 90px;
+    left: 50px;
+}
+.icons-list{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: tomato;
+}
+
+#signout{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#signout .btn{
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px){
+    .dashContainer{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: none;
+    }
+    .menu-card{
+        z-index: 100;
+        flex-basis: 150px;
+        width: 70%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .menu-card::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: tomato;
+        bottom: -100%;
+        left: 0;
+        transition: all ease 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .menu-card:hover::after{
+        bottom: 0;
+    }
+    .menu-card:hover{
+        color: white;
+        z-index: 100;
+        flex-basis: 150px;
+        width: 70%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .menu-card h1{
+        font-weight: bold;
+        font-size: 4rem;
+        top: 0;
+    }
+
+    .icons{
+        position: fixed;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        top: 35%;
+        left: 10px;
+    }
+    .icons-list{
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: tomato;
+    }
+    .icons-list:hover{
+        color: #0B5ED7;
+    }
+    
+}

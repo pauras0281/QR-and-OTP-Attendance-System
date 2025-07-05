@@ -1,0 +1,54 @@
+/* Overall table styling */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center table horizontally */
+    font-weight: bold;
+  }
+  
+  /* Table headers */
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Attendance cell styling */
+  .present {
+    color: green; /* Green for present students */
+  }
+  
+  .absent {
+    color: red; /* Red for absent students */
+  }
+  
+  /* Optional: Styling for table caption or summary */
+  caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 16px;
+  }
+
+  .attendance-container h2{
+    font-size: 3rem;
+  }
+  
+
+  .attendance-percentage {
+    font-weight: bold;
+  }
+  
+  .attendance-percentage.low {
+    color: red;
+  }
+  
+  .attendance-percentage.high {
+    color: green;
+  }

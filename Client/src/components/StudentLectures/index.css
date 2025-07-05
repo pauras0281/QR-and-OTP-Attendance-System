@@ -1,0 +1,100 @@
+/* lecture-container */
+.lecture-container {
+  /* Use a light background with subtle shadow */
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Add some padding for better content spacing */
+  border-radius: 4px; /* Add subtle rounded corners */
+  /* Set width to 100vw for full screen width */
+  width: 100vw;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* lecture-heading */
+.lecture-heading {
+  font-size: 1.5rem; /* Use a slightly larger font size for headings */
+  font-weight: bold; /* Make headings bolder */
+  margin-bottom: 1rem; /* Add some space below the heading */
+}
+
+/* lecture-table */
+.lecture-table {
+  border-collapse: collapse; /* Ensure table cells collapse borders */
+  /* Make the table fill the container width (100vw) */
+  width: 100%;
+}
+
+/* lecture-table thead th */
+.lecture-table thead th {
+  padding: 0.75rem 1rem; /* Add some padding to table headers */
+  text-align: left; /* Align table headers to the left */
+  border-bottom: 1px solid #ddd; /* Add a thin border to table headers */
+  font-weight: normal; /* Reset font weight back to normal for headers */
+}
+
+/* lecture-table tbody tr */
+.lecture-table tbody tr {
+  border-bottom: 1px solid #eee; /* Add a light border to each table row */
+  cursor: pointer; /* Make rows clickable (optional, for potential row interaction) */
+}
+
+/* lecture-table tbody tr:hover */
+.lecture-table tbody tr:hover {
+  background-color: #f2f2f2; /* Add a hover effect for rows */
+}
+
+/* lecture-table tbody tr td */
+.lecture-table tbody tr td {
+  padding: 0.75rem 1rem; /* Add padding to table cells */
+}
+
+/* scan-btn, otp-btn */
+.scan-btn,
+.otp-btn {
+  padding: 0.5rem 1rem; /* Adjust button padding */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Add rounded corners to buttons */
+  font-size: 0.875rem; /* Use a slightly smaller font size for buttons */
+  cursor: pointer; /* Make buttons clickable */
+  margin-right: 0.5rem; /* Add some margin between buttons */
+}
+
+/* scan-btn */
+.scan-btn {
+  background-color: #38a3a5; /* Blue button for scanning */
+  color: #fff; /* White text for buttons */
+}
+
+/* otp-btn */
+.otp-btn {
+  background-color: #ffc107; /* Yellow button for OTP */
+  color: #000; /* Black text for buttons */
+}
+
+/* scan-btn:disabled, otp-btn:disabled */
+.scan-btn:disabled,
+.otp-btn:disabled {
+  background-color: #ddd; /* Disable button color */
+  cursor: not-allowed; /* Indicate disabled state with cursor */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  /* Adjust font sizes and padding for smaller screens */
+  .lecture-container {
+    padding: 1rem;
+  }
+
+  .lecture-heading {
+    font-size: 1.25rem;
+  }
+
+  .lecture-table tbody tr td {
+    padding: 0.5rem;
+  }
+
+  .scan-btn,
+  .otp-btn {
+    font-size: 0.75rem;
+  }
+}

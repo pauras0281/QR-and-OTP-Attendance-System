@@ -1,0 +1,83 @@
+.signup{
+    height: max-content;
+    width: 550px;
+    padding-left: 50px;
+    position: absolute;
+    right: 1.2%;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 30px;
+}
+.signup>.mb-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    border-radius: 100px;
+}
+label{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0B5ED7;
+}
+.signup>.mb-3>input{
+    border-radius: 2px;
+    height: 40px;
+    width: 450px;
+    outline: auto;
+}
+.signup p{
+    margin-top: 30px;
+    color: rgb(63, 41, 38);
+    cursor: pointer;
+    font-size: 3rem;
+}
+.signup-header{
+    font-size: 7rem;
+    position: absolute;
+    transform: translateY(-50%);
+    color: rgb(65, 59, 14);
+    top: 50%;
+    left: 15%;
+}
+
+.userAuth{
+    /* display: flex; */
+    font-size: 3rem;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+#signupas{
+    font-weight: bold;
+    display: inline;
+}
+.userAuth p{
+    margin: 0;
+    color: rgb(65, 59, 14);
+    display: inline;
+    margin-right: 20px;
+}
+#userAuth input{
+    margin: 0;
+}
+#keyLabel{
+    color: tomato;
+}
+
+.signbtn{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-right: 130px;color: white;
+    background-color: #0B5ED7;
+    font-size: 2vh;
+    border-radius: 3px;
+    
+}
+.signup #login{
+    display: inline;
+    font-weight: bold;
+}

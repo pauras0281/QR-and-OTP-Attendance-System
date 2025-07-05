@@ -1,0 +1,35 @@
+.header{
+    text-align:center;
+    background-color: #0B5ED7;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header h1{
+    font-size: 5rem;
+    padding: 5px;
+    color: white;
+    margin-left: 5px;
+}
+
+.header h1:hover{
+    color: black;
+    cursor: pointer;
+}
+.header h5{
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid white;
+    margin-right: 5px;
+    color: white;
+    border-radius: 5px;
+
+}
+.header h5:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
